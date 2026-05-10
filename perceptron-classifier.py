@@ -24,8 +24,7 @@ def load_imdb_dataset(path, max_examples=None):
     random.seed(42)
     random.shuffle(dataset)
 
-    # We use a subset because this implementation uses plain Python lists
-    # and no machine learning libraries, so full IMDB training is slow locally.
+
     if max_examples is not None:
         dataset = dataset[:max_examples]
 
