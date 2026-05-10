@@ -1,44 +1,31 @@
-# Sentiment Analysis on IMDb Reviews
+# IMDB Perceptron Classifier
 
-This project implements a baseline sentiment analysis system using a Naive Bayes classifier from scratch.
+This project implements a simple Perceptron-based text classifier for sentiment analysis on the IMDB movie review dataset.
 
-## Task
+## Features
 
-Classify movie reviews as:
-
-* Positive (1)
-* Negative (0)
-
-## Implementation
-
-* Tokenization
-* Vocabulary (Bag of Words)
-* Naive Bayes classifier
-* Prediction
-* Evaluation (Accuracy, Precision, Recall, F1)
+- Text preprocessing
+- Stop word removal
+- Train/test split
+- Bag-of-words vectorization
+- Perceptron classifier implementation
+- Evaluation metrics:
+  - Accuracy
+  - Precision
+  - Recall
+  - F1 Score
 
 ## Dataset
 
-IMDB Dataset of 50K Movie Reviews (Kaggle)
-
-Download:
-https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews
-
-Place file in:
-data/IMDB Dataset.csv
-
-## Run
-
-python main.py
-
-## Output Example
-
-Accuracy: 0.53
-Precision: 0.53
-Recall: 0.93
-F1: 0.67
+IMDB Movie Review Dataset
 
 ## Notes
 
-* No external ML libraries used
-* Baseline Naive Bayes model
+No machine learning libraries such as sklearn or PyTorch were used.
+
+A subset of the dataset was used because the implementation relies on plain Python lists and becomes slow on large datasets.
+
+## Run
+
+```bash
+python perceptron-classifier.py
