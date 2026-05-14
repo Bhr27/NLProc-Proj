@@ -3,7 +3,7 @@ import random
 from evaluation import Evaluator
 
 
-def load_imdb_dataset(path, limit=2000):
+def load_imdb_dataset(path, limit=5000):
     dataset = []
 
     with open(path, encoding="utf-8") as f:
